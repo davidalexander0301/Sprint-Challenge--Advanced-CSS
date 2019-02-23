@@ -1,1 +1,31 @@
 // Mixins Here
+
+.btn {
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+    padding: 12px;
+    padding-right: 16px;
+    background: blue;
+    color: white;
+    font-size: 16px;
+
+    @media @mobile {
+        width: 100%;
+    }
+    
+    &:hover {
+        background: @white;
+        color: @button-bg;
+    }
+    
+  }
+  
+  
+.space-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
